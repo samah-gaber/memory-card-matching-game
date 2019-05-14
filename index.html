@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Memory Game</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- losing game message -->
+	<div id="loseMsg">
+		<p>Time is out!!</p> 
+		<p>You've lost.</p>
+		<button onClick="window.location.reload()">Play again</button>
+	</div>
+	<!-- winning game message -->
+	<div id="winMsg">
+		<p>Congratulations!!</p> 
+		<p>You've won.</p>
+		<button onClick="window.location.reload()">Play again</button>
+	</div>
+	<section id="cardsCont">
+		<!-- timer -->
+		<div id="timer">
+			<h2>Timer</h2>
+			<p id="timerDisplay">03:00</p>
+		</div>
+		<!-- cards -->
+		<div class="card" data-framework="first">
+			<img class="front" src="images/1.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="first">
+			<img class="front" src="images/1.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="second">
+			<img class="front" src="images/2.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="second">
+			<img class="front" src="images/2.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="third">
+			<img class="front" src="images/3.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="third">
+			<img class="front" src="images/3.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="fourth">
+			<img class="front" src="images/4.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="fourth">
+			<img class="front" src="images/4.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="fifth">
+			<img class="front" src="images/5.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="fifth">
+			<img class="front" src="images/5.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+		<div class="card" data-framework="sixth">
+			<img class="front" src="images/6.jpg"/>
+			<img class="back" src="images/cardback.jpg" alt="JS Badge" />
+		</div>
+		<div class="card" data-framework="sixth">
+			<img class="front" src="images/6.jpg"/>
+			<img class="back" src="images/cardback.jpg"/>
+		</div>
+	</section>
+	<script src="js/script.js"></script>
+</body>
+</html>

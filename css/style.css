@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-image: url(../images/background.jpg);
+	position: relative;
+}
+
+#cardsCont {
+	width: 640px;
+	height: 640px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+}
+#timer {
+	width: 100%;
+	text-align: center;
+	height: 80px;
+	padding: 20px 0;
+	background-color: #12475ed1;
+}
+#timer h2 {
+	display: inline-block;
+	margin-right: 20px;
+	color: white;
+	font-size: 30px;
+}
+p {
+	display: inline-block;
+	color: white;
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+
+#loseMsg, #winMsg {
+	display: none;
+	margin: 0 auto;
+	border-radius: 50px;
+	padding: 70px 20px;
+	text-align: center;
+	width: 350px;
+	height: 350px;
+	background-color: #12475ed1;
+	position: absolute;
+	z-index: 1;
+	top: 33%;
+	width: 25%;
+}
+#loseMsg p, #winMsg p {
+	display: block;
+}
+button {
+	color: white;
+	font-size: 24px;
+	background-color: transparent;
+	padding: 5px 10px;
+	width: 150px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.card {
+	width: calc(25% - 10px);
+	height: calc(33.333% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.card:active {
+	transform: scale(0.97);
+	transition: transform .2s;
+}
+
+.card.flip {
+	transform: rotateY(180deg);
+}
+
+.front,
+.back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 5px;
+	backface-visibility: hidden;
+}
+
+.front {
+	transform: rotateY(180deg);
+}
